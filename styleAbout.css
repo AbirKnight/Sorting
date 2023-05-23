@@ -1,0 +1,29 @@
+input
+{
+    width: 400px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.btnabout
+{
+    margin-top: 20px;
+    width: 400px;
+    height: 40px;
+    font-family: cursive;
+    font-size: larger;
+    background-color: brown;
+    border-radius: ;
+}
+.btnabout:hover
+{
+    background-color: rgba(165, 42, 42, 0.741);
+    cursor: pointer;
+}
+.heleme
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}

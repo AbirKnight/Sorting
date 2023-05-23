@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="selectioncom.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Practice</a></li>
+                <li><a href="algo.html">Complexity</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <section class="welc">
+            <h2>..Complexity Analysis..</h2>
+        </section>
+        <section class="sorting">
+            <h2 id="h-sorting">Merge sort !</h3>
+                <p>
+                    Time Complexity: O(N log(N)), Sorting arrays on different machines. Merge Sort is a recursive algorithm and time
+                    complexity can be expressed as following recurrence relation.
+                    
+                    T(n) = 2T(n/2) + θ(n)
+                    
+                    The above recurrence can be solved either using the Recurrence Tree method or the Master method. It falls in case II of
+                    the Master Method and the solution of the recurrence is θ(Nlog(N)). The time complexity of Merge Sort isθ(Nlog(N)) in
+                    all 3 cases (worst, average, and best) as merge sort always divides the array into two halves and takes linear time to
+                    merge two halves.
+                    
+                    Auxiliary Space: O(n), In merge sort all elements are copied into an auxiliary array. So N auxiliary space is required
+                    for merge sort.
+                    <br>
+                    <br>
+                <p><b>Q. How can we make Merge sort more efficient?</b></p>
+                <br>
+                <p>
+                    Merge sort can be made more efficient by replacing recursive calls with Insertion sort for smaller array sizes, where
+                    the size of the remaining array is less or equal to 43 as the number of operations required to sort an array of max size
+                    43 will be less in Insertion sort as compared to the number of operations required in Merge sort.
+                </p>
+                <br>
+                <p><b>Q. Analysis of Merge Sort ?</b>></p>
+                <br>
+                <p>
+                    A merge sort consists of several passes over the input. The first pass merges segments of size 1, the second merges
+                    segments of size 2, and the i_{th} pass merges segments of size 2i-1. Thus, the total number of passes is [log2n]. As
+                    merge showed, we can merge two sorted segments in linear time, which means that each pass takes O(n) time. Since there
+                    are [log2n] passes, the total computing time is O(nlogn).
+                </p>
+                </p>
+                <section>
+                    <section class="m-div">
+                        <h3><a href="#">More Question ?</a></h3>
+                    </section>
+    </div>
+</body>
+</html>
